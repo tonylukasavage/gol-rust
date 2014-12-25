@@ -1,0 +1,5 @@
+[package]
+
+name = "gol-rust"
+version = "0.0.1"
+authors = ["Tony Lukasavage <anthony.lukasavage@gmail.com>"]
