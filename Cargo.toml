@@ -4,10 +4,18 @@ name = "gol-rust"
 version = "0.0.1"
 authors = ["Tony Lukasavage <anthony.lukasavage@gmail.com>"]
 
-[dependencies.gfx]
+[dependencies.pistoncore-sdl2_window]
 
-git = "http://github.com/gfx-rs/gfx-rs"
+git = "https://github.com/pistondevelopers/sdl2_window"
 
-[dependencies.glutin]
+[dependencies.pistoncore-event]
 
-git = "https://github.com/tomaka/glutin"
+git = "https://github.com/pistondevelopers/event"
+
+# [dependencies.piston2d-sprite]
+
+# git = "https://github.com/pistondevelopers/sprite"
+
+[dependencies.piston2d-opengl_graphics]
+
+git = "https://github.com/pistondevelopers/opengl_graphics"

@@ -2,48 +2,26 @@
 name = "gol-rust"
 version = "0.0.1"
 dependencies = [
- "gfx 0.1.0 (git+http://github.com/gfx-rs/gfx-rs)",
- "glutin 0.0.2 (git+https://github.com/tomaka/glutin)",
+ "piston2d-opengl_graphics 0.0.0 (git+https://github.com/pistondevelopers/opengl_graphics)",
+ "pistoncore-event 0.0.1 (git+https://github.com/pistondevelopers/event)",
+ "pistoncore-sdl2_window 0.0.0 (git+https://github.com/pistondevelopers/sdl2_window)",
 ]
 
 [[package]]
-name = "android_glue"
+name = "freetype-rs"
 version = "0.0.1"
-source = "git+https://github.com/tomaka/android-rs-glue#64698d2cae2ee560371d0ee729e12f3db3aa4dbd"
+source = "git+https://github.com/PistonDevelopers/freetype-rs.git#ed8565a563e6787282de7ba720cf3199f13f2f0c"
 dependencies = [
- "compile_msg 0.1.1 (git+https://github.com/huonw/compile_msg)",
+ "freetype-sys 0.0.1 (git+https://github.com/PistonDevelopers/freetype-sys)",
 ]
 
 [[package]]
-name = "cocoa"
-version = "0.1.1"
-source = "git+https://github.com/servo/rust-cocoa#7412734e04a80f6e2166993a71b2bfd387801920"
-
-[[package]]
-name = "compile_msg"
-version = "0.1.1"
-source = "git+https://github.com/huonw/compile_msg#e12dbf378a0b134e9ee7a6a6e26c40fb283d6f02"
-
-[[package]]
-name = "core_foundation"
-version = "0.1.0"
-source = "git+https://github.com/servo/rust-core-foundation#81db9ab15f67e16d7a3e9705a06cad65192014fd"
-
-[[package]]
-name = "core_graphics"
-version = "0.1.0"
-source = "git+https://github.com/servo/rust-core-graphics#9434e2bda65d259f825104170b5fa6cc6dbaf5a9"
+name = "freetype-sys"
+version = "0.0.1"
+source = "git+https://github.com/PistonDevelopers/freetype-sys#7a4ada1f2e399b724766ea07ba8d0ded61eeddc4"
 dependencies = [
- "core_foundation 0.1.0 (git+https://github.com/servo/rust-core-foundation)",
-]
-
-[[package]]
-name = "device"
-version = "0.1.0"
-source = "git+http://github.com/gfx-rs/gfx-rs#af0c3857b34a7c6496b86c77448045619b62d04a"
-dependencies = [
- "gfx_gl 0.1.0 (git+https://github.com/gfx-rs/gfx_gl.git)",
- "log 0.1.4 (registry+https://github.com/rust-lang/crates.io-index)",
+ "libz-sys 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "pkg-config 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -52,29 +30,13 @@ version = "0.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
-name = "gfx"
-version = "0.1.0"
-source = "git+http://github.com/gfx-rs/gfx-rs#af0c3857b34a7c6496b86c77448045619b62d04a"
+name = "gl"
+version = "0.0.2"
+source = "git+https://github.com/bjz/gl-rs#32668cf156c9c65d1ae01786cb2820c2250ed21b"
 dependencies = [
- "device 0.1.0 (git+http://github.com/gfx-rs/gfx-rs)",
- "gfx_macros 0.1.0 (git+http://github.com/gfx-rs/gfx-rs)",
- "log 0.1.4 (registry+https://github.com/rust-lang/crates.io-index)",
- "render 0.1.0 (git+http://github.com/gfx-rs/gfx-rs)",
- "time 0.1.4 (registry+https://github.com/rust-lang/crates.io-index)",
-]
-
-[[package]]
-name = "gfx_gl"
-version = "0.1.0"
-source = "git+https://github.com/gfx-rs/gfx_gl.git#71b56127a36ec6a566c1126e61def1b60da5b288"
-dependencies = [
+ "gl_common 0.0.3 (git+https://github.com/bjz/gl-rs.git)",
  "gl_generator 0.0.4 (git+https://github.com/bjz/gl-rs.git)",
 ]
-
-[[package]]
-name = "gfx_macros"
-version = "0.1.0"
-source = "git+http://github.com/gfx-rs/gfx-rs#af0c3857b34a7c6496b86c77448045619b62d04a"
 
 [[package]]
 name = "gl_common"
@@ -93,22 +55,25 @@ dependencies = [
 ]
 
 [[package]]
-name = "glutin"
-version = "0.0.2"
-source = "git+https://github.com/tomaka/glutin#fce4f0a1298d216b928ccdb25f8e481397981afe"
+name = "image"
+version = "0.2.0-alpha.4"
+source = "git+https://github.com/pistondevelopers/image#cb6221b4d83c220ddef5381d5edd06cb63e3996d"
 dependencies = [
- "android_glue 0.0.1 (git+https://github.com/tomaka/android-rs-glue)",
- "cocoa 0.1.1 (git+https://github.com/servo/rust-cocoa)",
- "core_graphics 0.1.0 (git+https://github.com/servo/rust-core-graphics)",
- "gl_common 0.0.3 (git+https://github.com/bjz/gl-rs.git)",
- "gl_generator 0.0.4 (git+https://github.com/bjz/gl-rs.git)",
- "winapi 0.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "num 0.1.3 (git+https://github.com/rust-lang/num)",
 ]
 
 [[package]]
 name = "khronos_api"
 version = "0.0.3"
 source = "git+https://github.com/bjz/gl-rs.git#32668cf156c9c65d1ae01786cb2820c2250ed21b"
+
+[[package]]
+name = "libz-sys"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "pkg-config 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)",
+]
 
 [[package]]
 name = "log"
@@ -119,23 +84,126 @@ dependencies = [
 ]
 
 [[package]]
+name = "num"
+version = "0.1.3"
+source = "git+https://github.com/rust-lang/num#82d44da2d7e75d4325a4687e8225bf91e0523505"
+dependencies = [
+ "rustc-serialize 0.1.5 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "piston-texture"
+version = "0.0.1"
+source = "git+https://github.com/pistondevelopers/texture#0380876cec71e384841d5a06ad32cb462c97be20"
+
+[[package]]
+name = "piston2d-graphics"
+version = "0.0.1"
+source = "git+https://github.com/pistondevelopers/graphics#84e25d73da520d86b332fad76b92a621b48853ad"
+dependencies = [
+ "piston-texture 0.0.1 (git+https://github.com/pistondevelopers/texture)",
+ "pistoncore-current 0.0.3 (git+https://github.com/PistonDevelopers/current)",
+ "read_color 0.0.1 (git+https://github.com/PistonDevelopers/read_color)",
+ "vecmath 0.0.1 (git+https://github.com/PistonDevelopers/vecmath)",
+]
+
+[[package]]
+name = "piston2d-opengl_graphics"
+version = "0.0.0"
+source = "git+https://github.com/pistondevelopers/opengl_graphics#d59ccfb39f46f764a865c2b2829f11090051149a"
+dependencies = [
+ "freetype-rs 0.0.1 (git+https://github.com/PistonDevelopers/freetype-rs.git)",
+ "gl 0.0.2 (git+https://github.com/bjz/gl-rs)",
+ "image 0.2.0-alpha.4 (git+https://github.com/pistondevelopers/image)",
+ "piston-texture 0.0.1 (git+https://github.com/pistondevelopers/texture)",
+ "piston2d-graphics 0.0.1 (git+https://github.com/pistondevelopers/graphics)",
+ "shader_version 0.0.0 (git+https://github.com/pistondevelopers/shader_version)",
+]
+
+[[package]]
+name = "pistoncore-current"
+version = "0.0.3"
+source = "git+https://github.com/PistonDevelopers/current#ddd4139d1b15d879df9293a56b8f001c650e44a8"
+
+[[package]]
+name = "pistoncore-event"
+version = "0.0.1"
+source = "git+https://github.com/pistondevelopers/event#8c35e7ed21777b277b46d9d89bc3ef2d451ab36a"
+dependencies = [
+ "pistoncore-current 0.0.3 (git+https://github.com/PistonDevelopers/current)",
+ "pistoncore-event_loop 0.0.2 (git+https://github.com/PistonDevelopers/event_loop)",
+ "pistoncore-input 0.0.3 (git+https://github.com/PistonDevelopers/input)",
+ "pistoncore-window 0.0.1 (git+https://github.com/PistonDevelopers/window)",
+]
+
+[[package]]
+name = "pistoncore-event_loop"
+version = "0.0.2"
+source = "git+https://github.com/PistonDevelopers/event_loop#8181909a1086af1d3da6224702ac57be6900451f"
+dependencies = [
+ "pistoncore-current 0.0.3 (git+https://github.com/PistonDevelopers/current)",
+ "time 0.1.4 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "pistoncore-input"
+version = "0.0.3"
+source = "git+https://github.com/PistonDevelopers/input#c006f288c59fba634ea28fbb37ba2b7c4b28482d"
+dependencies = [
+ "rustc-serialize 0.1.5 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "pistoncore-sdl2_window"
+version = "0.0.0"
+source = "git+https://github.com/pistondevelopers/sdl2_window#51780e439385cbce20b8ea3edc4e8b41ed952968"
+dependencies = [
+ "gl 0.0.2 (git+https://github.com/bjz/gl-rs)",
+ "pistoncore-input 0.0.3 (git+https://github.com/PistonDevelopers/input)",
+ "pistoncore-window 0.0.1 (git+https://github.com/PistonDevelopers/window)",
+ "sdl2 0.0.13 (registry+https://github.com/rust-lang/crates.io-index)",
+ "shader_version 0.0.0 (git+https://github.com/pistondevelopers/shader_version)",
+]
+
+[[package]]
+name = "pistoncore-window"
+version = "0.0.1"
+source = "git+https://github.com/PistonDevelopers/window#e562213abf861971a4d765f086a04bb017059dbd"
+dependencies = [
+ "pistoncore-current 0.0.3 (git+https://github.com/PistonDevelopers/current)",
+ "pistoncore-event_loop 0.0.2 (git+https://github.com/PistonDevelopers/event_loop)",
+ "pistoncore-input 0.0.3 (git+https://github.com/PistonDevelopers/input)",
+]
+
+[[package]]
+name = "pkg-config"
+version = "0.1.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "read_color"
+version = "0.0.1"
+source = "git+https://github.com/PistonDevelopers/read_color#3341ae05529048810206377310048403e13de3a4"
+
+[[package]]
 name = "regex"
 version = "0.1.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
-name = "render"
-version = "0.1.0"
-source = "git+http://github.com/gfx-rs/gfx-rs#af0c3857b34a7c6496b86c77448045619b62d04a"
-dependencies = [
- "device 0.1.0 (git+http://github.com/gfx-rs/gfx-rs)",
- "log 0.1.4 (registry+https://github.com/rust-lang/crates.io-index)",
-]
-
-[[package]]
 name = "rustc-serialize"
 version = "0.1.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "sdl2"
+version = "0.0.13"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "shader_version"
+version = "0.0.0"
+source = "git+https://github.com/pistondevelopers/shader_version#e8ccfd20b651b3c2d9303b2d80beff565be24bbd"
 
 [[package]]
 name = "time"
@@ -148,9 +216,9 @@ dependencies = [
 ]
 
 [[package]]
-name = "winapi"
-version = "0.0.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
+name = "vecmath"
+version = "0.0.1"
+source = "git+https://github.com/PistonDevelopers/vecmath#d3d3599709673faf7ee7b5204fd5c7b5561eed4a"
 
 [[package]]
 name = "xml-rs"
